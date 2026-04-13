@@ -2,117 +2,13 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #eef6f0;
-  color: #333;
+  background-color: #f4f4f4;
 }
-
 header {
   background-color: #2e8b57;
   color: white;
   text-align: center;
   padding: 1em 0;
-}
-* {
-  font-family: "Goudy Bookletter 1911", serif;
-  font-weight: 400;
-  font-style: normal;
-}
-nav {
-  background-color: #d8f0e4;
-  padding: 1em;
-}
-
-nav ul {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
-nav a {
-  color: #225a3f;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav a:hover {
-  color: #163c28;
-}
-
-main {
-  max-width: 960px;
-  margin: 2rem auto;
-  padding: 1.5rem;
-  background: white;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  border-radius: 12px;
-}
-
-.visit-info,
-.ticket-options,
-.booking-form {
-  margin-bottom: 2rem;
-}
-
-.visit-info h2,
-.ticket-options h2,
-.booking-form h2 {
-  color: #2e8b57;
-  margin-bottom: 0.75rem;
-}
-
-.visit-info p,
-.ticket-options ul {
-  line-height: 1.8;
-}
-
-.ticket-options ul {
-  padding-left: 1.2rem;
-}
-
-.ticket-options li {
-  margin-bottom: 0.75rem;
-}
-
-.booking-form form {
-  display: grid;
-  gap: 1rem;
-}
-
-.booking-form label {
-  font-weight: 600;
-}
-
-.booking-form input,
-.booking-form select,
-.booking-form button {
-  width: 100%;
-  padding: 0.9rem 1rem;
-  border-radius: 8px;
-  border: 1px solid #c9d8d1;
-  font-size: 1rem;
-}
-
-.booking-form input:focus,
-.booking-form select:focus {
-  outline: none;
-  border-color: #2e8b57;
-  box-shadow: 0 0 0 4px rgba(46, 139, 87, 0.12);
-}
-
-.booking-form button {
-  background-color: #2e8b57;
-  color: white;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-}
-
-.booking-form button:hover {
-  background-color: #246b45;
 }
 
 footer {
@@ -121,6 +17,113 @@ footer {
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
+}
+.plan {
+  display: flex;
+  justify-content: space-around;
+  gap: 2em;
+  margin-top: 20px;
+  color: #2e8b57;
+}
+.plan a {
+  text-decoration: none;
+  color: #2e8b57;
+  font-weight: bold;
+  padding: 0.5em 1em;
+  border: 2px solid #2e8b57;
+  border-radius: 5px;
+}
+main {
+  padding: 2em;
+  max-width: 800px;
+  margin: auto;
+  background-color: white;
+}
+h2 {
+  color: #2e8b57;
+}
+.contact-info {
+  margin-bottom: 2em;
+}
+label {
+  display: block;
+  margin-top: 1em;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 0.5em;
+  margin-top: 0.5em;
+}
+
+button {
+  background-color: #2e8b57;
+  color: white;
+  border: none;
+  padding: 1em;
+  margin-top: 1em;
+  margin-bottom: 2em;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #246b45;
+}
+/* here we go */
+* {
+  font-family: "Goudy Bookletter 1911", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+}
+#navigation {
+  align-items: center;
+  background-color: var(--last-color);
+  padding: 1em;
+  text-align: center;
+}
+
+#navigation ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  margin: 0;
+}
+
+#navigation li {
+  list-style: none;
+}
+
+#navigation a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: 700;
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  display: inline-block;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+#navigation a:hover {
+  color: #000000; /* black on hover */
+}
+
+#navigation ul .visit {
+  color: black;
+  /* text-decoration: underline; */
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+  margin: 0;
+}
+footer ul li {
+  list-style: none;
 }
 
 /* Hamburger Menu */
@@ -175,17 +178,5 @@ footer {
 
   #navigation {
     display: none;
-  }
-}
-
-@media (max-width: 700px) {
-  nav ul {
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-
-  main {
-    margin: 1rem;
-    padding: 1rem;
   }
 }
